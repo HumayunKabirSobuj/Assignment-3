@@ -19,39 +19,72 @@
         rel="stylesheet">
 
 
-        <!-- ----------------- -->
+    <!-- ----------------- -->
 
-        <style>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 
-            .font-manrope{
-                font-family: 'Manrope', sans-serif;
-            }
-
-        </style>
-
-        <script>
-            tailwind.config = {
+    <script>
+        tailwind.config = {
             theme: {
                 extend: {
-                colors: {
-                    clifford: '#da373d',
-                }
+                    colors: {
+                        clifford: '#da373d',
+                    }
                 }
             }
-            }
-        </script>
+        }
+    </script>
 
 
 
 
-</head >
+</head>
 
-<body >
+<body>
 
     <header class="font-manrope container mx-auto px-6 md:px-20 lg:px-32">
 
 
-        
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a><span class="font-normal text-base text-[#FF4240]">Home</span></a></li>
+                        <li><a><span class=" font-normal text-[#424247] text-base">About</span></a></li>
+                        <li><a><span class=" font-normal text-[#424247] text-base">Pages</span></a></li>
+                        <li><a><span class=" font-normal text-[#424247] text-base">Blog</span></a></li>
+                        <li><a><span class=" font-normal text-[#424247] text-base">Contact</span></a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-3xl font-extrabold text-[#131318] ">Hockey<span
+                        class="text-red-700">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a><span class="font-normal text-base text-[#FF4240]">Home</span></a></li>
+                    <li><a><span class=" font-normal text-[#424247] text-base">About</span></a></li>
+                    <li><a><span class=" font-normal text-[#424247] text-base">Pages</span></a></li>
+                    <li><a><span class=" font-normal text-[#424247] text-base">Blog</span></a></li>
+                    <li><a><span class=" font-normal text-[#424247] text-base">Contact</span></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end lg:flex md:flex gap-6">
+                <img class="lg:flex md:flex hidden" src="Images/search.svg" alt="">
+                <a class="btn text-white px-6 py-4 bg-[#FF4240] duration-500">Get Ticket</a>
+            </div>
+        </div>
 
 
     </header>
@@ -59,7 +92,7 @@
 
 
 
-    <main  class="font-manrope container mx-auto px-6 md:px-20 lg:px-32">
+    <main class="font-manrope container mx-auto px-6 md:px-20 lg:px-32">
 
 
     </main>
